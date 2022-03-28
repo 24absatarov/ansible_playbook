@@ -1,7 +1,7 @@
 ---
 - name: Ngnix Installation and Start & Enable
-  hosts: host1
-  gather_facts: no
+  hosts: all
+  gather_facts: yes
   tasks: 
     - name: Install EPEL-RELEASE
       yum: 
