@@ -1,0 +1,8 @@
+---
+- name: Install packages
+  hosts: all
+  tasks: 
+    - name: 
+      yum: # module
+        name: ["vim", "tree", "wget","curl"]
+        state: latest

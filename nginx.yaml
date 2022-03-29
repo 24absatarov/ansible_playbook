@@ -7,6 +7,7 @@
       yum: 
         name: epel-release
         state: latest
+        when: ansible_distribution == "CentOS"
 
     - name: Install Nginx on CentOS
       yum:
