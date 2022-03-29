@@ -1,13 +1,15 @@
 ---
 - name: Install packages
   hosts: all
+  vars:
+    my_variable: "yes"
   gather_facts: yes
   tasks: 
     - name: Install Packages on CentOS
       yum: # module
         name: ["vim", "tree", "wget","curl"]
         state: latest
-      when: ansible_pkg_mgr == "yum"
+      when: ansible_pkg_mgr == "yum" and my_variable == "yes"
 
     - name: Install Packages on Ubuntu
       apt:

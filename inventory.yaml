@@ -6,13 +6,13 @@ all: #
   children: # child group defined by user
       group1: # user defined group1
         hosts:
-          host1_group1: # user defined name
+          web1: # user defined name
             ansible_host: 10.108.0.7
           #host2: # user defined name
           #  ansible_host: 10.108.0.10
       group2: # user defined group2
         hosts: 
-          host1_group2: # user defined name
+          web2: # user defined name
             ansible_host: 10.108.0.10
           # host2: # user defined name
           #  ansible_host: 10.108.0.10
